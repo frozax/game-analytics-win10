@@ -456,8 +456,7 @@ std::wstring GameAnalyticsInterface::GetManufacturer() const
 
 std::wstring GameAnalyticsInterface::GetOSVersion() const
 {
-	auto deviceFamily = Windows::System::Profile::AnalyticsInfo::VersionInfo->DeviceFamily;
-	return (deviceFamily == "Windows.Desktop") ? L"windows 10" : L"windows_phone 10";
+	return L"windows_phone 8";
 }
 
 std::wstring GameAnalyticsInterface::GetPlatform() const
